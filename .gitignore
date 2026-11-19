@@ -1,0 +1,20 @@
+# Heavy GROMACS trajectories and large outputs
+*.xtc
+*.trr
+*.cpt
+*.edr
+*.log
+*.tpr
+*.gro
+*.pdb
+
+# GROMACS backup and temporary files
+\#*\#
+step*.pdb
+mdout.mdp
+
+# OS & Python cache files
+.DS_Store
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
