@@ -15,9 +15,11 @@ Repository for Master's thesis research on the **von Hippel-Lindau (VHL)** compl
 - `analysis_notes/`: Summaries of equilibration metrics, stability checks, and structural observations.
 
 ## Current Status
-- Completed energy minimization, NVT equilibration (~299.76 K), and NPT equilibration (~1010.19 kg/m³) on lab server **Ares**.
-- Running initial 1 ns production MD benchmark/test on **Ares** prior to trajectory post-processing and extended/comparative runs.
 
+- Completed energy minimization, NVT equilibration (~299.76 K), and NPT equilibration (~1010.19 kg/m³) on lab server **Ares**.
+- Completed initial **1 ns** (500,000 steps) production MD simulation on **Ares** (~6.375 ns/day).
+- Performed trajectory PBC centering (`gmx trjconv`), backbone RMSD (mean: 0.5941 nm, max: 4.0220 nm), and C-alpha RMSF (max: 2.0488 nm at residue 102) analyses, and generated metric plots (`rmsd_backbone.png`, `rmsf_ca.png`).
+- Next: Inspect trajectory/RMSF fluctuation at residue 102, map hotspot cancer mutations (e.g., `N78D`, `H115N`) on `7Z76`, and run extended comparative MD simulations.
 ## Links
 - **ORCID:** https://orcid.org/0009-0004-6514-0597
 - **LinkedIn:** https://www.linkedin.com/in/torklarki
